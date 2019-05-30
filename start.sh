@@ -12,7 +12,7 @@ if [ $status -ne 0 ]; then
   exit $status
 fi
 
-# Start SSH process:
+# Change permissions and start SSH process:
 cp /opt/software/Blueocean/Configs/ssh/id_rsa /root/.ssh/
 cp /opt/software/Blueocean/Configs/ssh/authorized_keys /root/.ssh/
 chmod 700 /root/.ssh
